@@ -8,3 +8,12 @@ h2 {
     font-size: 34px;
     font-family: "VT323";
 }
+
+footer {
+    background-color: lightgray;
+    text-align: center;
+    padding: 8px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}

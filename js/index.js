@@ -1,7 +1,7 @@
 // Autor: Osvald
 // Mängi lugu kui hiir on plaadi peal
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() { // veendu et leht on laetud
     let discs = document.querySelectorAll(".disc-img");
     let tracks = [
         "assets/audio/pigstep-short.mp3",
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
       disc.addEventListener('mouseout', () => {
         track.pause();
-        //audio.currentTime = 0;
+        //audio.currentTime = 0;    // alusta iga kord algusest
       });
     });
   });
