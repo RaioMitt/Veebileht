@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-main{
+main {
     flex-grow: 1;
 }
 
@@ -65,4 +65,28 @@ p {
 /* Adjust main margin-left on hover to make room for expanded sidebar */
 .sidenav:hover + .main {
     margin-left: 250px;
+}
+
+
+.disc-img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+    display: block;
+    transition: transform 2s linear;
+}
+
+/* ketas pöörlema kui kursor seal peal on */
+.disc-img:hover {
+    animation: spin 2s infinite linear;
+}
+
+/* ketta pöörlemine */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
