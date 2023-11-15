@@ -1,70 +1,69 @@
-
-/* The body styling */
-body {
-    background-image: url("/assets/images/test_taust.webp");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0; /* Remove default margin */
-    margin-left: 150px;
-    display: flex;
-    flex-direction: column;
-}
-main {
-    flex-grow: 1;
+body, html {
+    margin: 0;
+    padding: 0;
 }
 
-/* The paragraph styling */
 p {
     text-align: justify;
-    margin-right: 100px;
 }
 
-/* The sidebar menu */
+/* külgriba */
 .sidenav {
     height: 100%;
-    width: 100px; /* Set the width of the sidebar */
-    padding: 30px 15px;
+    width: 150px; /* Set the width of the sidebar */
     position: fixed;
-    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(5px);
-    display: flex;
-    flex-direction: column;
-    left: 0;
-    background-color: #e9e5e5; /* Black */
+    background-color: #e9e5e5;
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
     transition: width 0.5s;
+    border-right: #4d4949 1px solid;
 }
 
-/* The navigation menu links */
-.sidenav a {
+/* külgriba nupud */
+.side-button {
+    margin: 0;
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
+    border-bottom: 1px solid black; 
 }
 
-/* When you mouse over the navigation links, change their color */
+/* kui hiir külgriba nupul, muuda teksti värvi */
 .sidenav a:hover {
     color: #000000;
 }
 
-/* Style page content */
-.main {
-    margin-left: 160px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-    transition: margin-left 0.5s; /* Add transition for smoother effect */
-}
-
+/* kui hiir külgribal, tee see laiaks */
 .sidenav:hover {
-    width: 160px;
+    width: 200px;
 }
 
 /* Adjust main margin-left on hover to make room for expanded sidebar */
-.sidenav:hover + .main {
-    margin-left: 250px;
+.sidenav:hover + .content-wrapper {
+    margin-left: 200px;
+}
+
+.content-wrapper {
+    margin-left: 150px;
+    transition: margin-left 0.5s;
+}
+
+.logo-wrapper {
+    text-align: center;
+    padding: 50px 50px 0px 50px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.intro-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .disc-img-container {
@@ -100,7 +99,6 @@ p {
 }
 
 .review-block {
-    margin-right: 50px;
     padding: 20px;
     display: flex;
     flex-direction: column;

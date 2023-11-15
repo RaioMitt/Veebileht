@@ -17,24 +17,27 @@
   <script src="js/index.js"></script>
 </head>
 <body>
-  <div class="container">
-  </div>
-  <!-- Side navigation -->
+  <!-- Külgriba -->
   <div class="sidenav">
-    <a href="/subpages/history.html">Ajalugu</a>
-    <a href="/subpages/how2.html">Kuidas saada</a>
-    <a href="/subpages/more.html">Audio klipid</a>
+    <div class="side-button">Lingid</div>
+    <a class="side-button" href="/subpages/history.html">Ajalugu</a>
+    <a class="side-button" href="/subpages/how2.html">Kuidas saada</a>
+    <a class="side-button" href="/subpages/more.html">Audio klipid</a>
   </div>
-  
-  <header>
-    <!-- jukebox -->
-    <!--<img src="assets/images/jukebox.png" alt="Jukebox">-->
+  <div class="content-wrapper">
+
     <!-- logo -->
-    <img src="assets/images/logo.png" alt="Logo">
-  </header>
-  <main> <!-- buttload of text right here baby -->
-    <h1>Minecrafti Java versiooni plaatide arvustus</h1>
-    <p>Siin lehel saab lugeda Minecrafti plaatide arvustusi.</p>
+    <div class="logo-wrapper">
+      <img class="logo" src="assets/images/logo.png" alt="Logo">
+    </div>
+
+    <!-- sissejuhatav tekst -->
+    <div class="intro-wrapper">
+      <p class="introduction">
+        Siin lehel saab lugeda meie Minecrafti Java versiooni muusikaplaatide arvustusi.
+        Arvustused on kogu meeskonna mõtetest kokku pandud ning hinnang on meie individuaalsete hinnangute aritmeetiline keskmine.
+      </p>
+    </div>
     
     <div class="review-block">
       <div class="title-and-img">
@@ -277,8 +280,9 @@
       </p>
       <div class="grade">Hinnang: 0.3/5</div>
     </div>
+    <hr>
+  </div>
       
-  </main>
   <footer>
     &copy; 2023 Minecrafti plaatide arvustus. Kõik õigused kaitstud 😎
   </footer>

@@ -13,7 +13,5 @@ footer {
     background-color: lightgray;
     text-align: center;
     padding: 8px;
-    border-style: solid;
-    border-color: black;
-    border-width: 1px;
+    border-top: 2px solid black;
 }
