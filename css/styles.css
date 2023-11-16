@@ -130,6 +130,15 @@ p {
     transition: margin-left 0.3s ease-in-out;
 }
 
+.main-content {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px 70px;
+    background-image: url('../assets/images/book-border.png');
+    background-size: 100% auto;
+    box-shadow: 0 0 5px black;
+}
+
 
 h1 {
     font-size: 60px;
@@ -146,16 +155,17 @@ h2 {
 /* footer */
 footer {
     background-color: lightgray;
+    box-shadow: 0 0 50px black;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 160px;
+    height: 60px;
     background-image: url('../assets/images/bg-bedgrock.webp');
     padding: 8px;
 }
 
 .footer-text {
-    font-size: 40px;
+    font-size: 2em;
     color: white;
     font-family: "VT323";
     line-height: 2;
