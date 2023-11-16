@@ -9,9 +9,71 @@ h2 {
     font-family: "VT323";
 }
 
+
+/* footer */
 footer {
     background-color: lightgray;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 160px;
+    background-image: url('/assets/images/bg-bedgrock.webp');
     padding: 8px;
-    border-top: 2px solid black;
+}
+
+.footer-text {
+    font-size: 40px;
+    color: white;
+    font-family: "VT323";
+    line-height: 2;
+}
+
+.footer-text div {
+    display: inline-block;
+}
+
+.foot-flash-1,
+.foot-flash-2,
+.foot-flash-3,
+.foot-flash-4,
+.foot-flash-5,
+.foot-flash-6,
+.foot-flash-7,
+.foot-flash-8 {
+    animation-name: flash-green;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+
+.foot-flash-1 {
+    animation-delay: 0.1s;
+}
+.foot-flash-2 {
+    animation-delay: 0.2s;
+}
+.foot-flash-3 {
+    animation-delay: 0.3s;
+}
+.foot-flash-4 {
+    animation-delay: 0.4s;
+}
+.foot-flash-5 {
+    animation-delay: 0.5s;
+}
+.foot-flash-6 {
+    animation-delay: 0.6s;
+}
+.foot-flash-7 {
+    animation-delay: 0.7s;
+}
+.foot-flash-8 {
+    animation-delay: 0.8s;
+}
+
+
+@keyframes flash-green {
+    50% {
+        color: lime;
+        text-shadow: 0 0 30px black, 0 0 30px black, 0 0 30px black;
+    }
 }
