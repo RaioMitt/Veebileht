@@ -1,4 +1,6 @@
-# Reklaamid ja pop-up'id jms
-Siin branch'is saab huvi pärast katsetada igasugu tüütuid asju nagu reklaamid ja muu selline mida tegelikult ei tahaks veebilehele panna.
+# Minecrafti plaatide arvustus
+Tere tulemast meie Minecrafti muusikaplaatide arvustuse lehele!
+See leht on tehtud 2023. aasta sügisel Tartu Ülikooli kursuse Sissejuhatus erialasse raames.
+Tiimi liikmed on Raio, Kaspar ja Osvald.
 
 [Veebileht](https://raiomitt.github.io/Veebileht/)
