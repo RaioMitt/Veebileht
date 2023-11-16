@@ -14,6 +14,11 @@
     padding-right: 20px;
 }
 
+.introduction {
+    font-size: large;
+    text-align: left;
+}
+
 .disc-img-container {
     display: flex;
     justify-content: center;
