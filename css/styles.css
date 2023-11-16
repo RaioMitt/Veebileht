@@ -38,6 +38,13 @@ p {
     text-align: justify;
 }
 
+hr {
+    width: 70%;
+    border-style: solid;
+    border-width: 1px;
+    border-bottom: none;
+}
+
 /* külgriba */
 .sidenav {
     position: fixed;
@@ -133,7 +140,7 @@ p {
 .main-content {
     margin: 0 auto;
     max-width: 800px;
-    padding: 20px 70px;
+    padding: 20px 100px 20px 90px;
     background-image: url('../assets/images/book-border.png');
     background-size: 100% auto;
     box-shadow: 0 0 5px black;
