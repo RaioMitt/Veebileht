@@ -1,3 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image:
+        linear-gradient(to bottom, rgb(84, 161, 255), rgb(210, 230, 255)),
+        url('../assets/images/bg-grass.webp'),
+        url('../assets/images/bg-dirt.webp'),
+        url('../assets/images/bg-dirt.webp'),
+        url('../assets/images/bg-dirt.webp'),
+        url('../assets/images/bg-stone.webp');
+    background-repeat: no-repeat, repeat-x, repeat-x, repeat-x, repeat-x, repeat;
+    
+    /* Adjust these sizes according to the actual size of your textures */
+    background-size: 
+        100% 250px, /* Sky size */
+        auto auto, /* Grass */
+        auto auto, /* First layer of dirt */
+        auto auto, /* Second layer of dirt */
+        auto auto, /* Third layer of dirt */
+        auto auto; /* Stone */
+     
+    /* Since the sky is a gradient, it doesn't need a position. The following positions are for the textures. */
+    background-position: 
+        center top,
+        0 250px,
+        0 350px,
+        0 450px,
+        0 550px,
+        0 650px;
+
+    /* Set the overall background color as stone */
+    background-color: #565656;
+}
+
+p {
+    text-align: justify;
+}
+
+/* külgriba */
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(#a7cbb0, lightgray);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transform: translateX(0%);
+    transition: transform 0.3s ease-in-out;
+    border-right: #4d4949 1px solid;
+}
+
+/* peida külgriba kui pole vaja */
+.sidenav.inactive {
+    transform: translateX(-100%);
+}
+
+/* külgriba nupud */
+.side-button {
+    display: grid;
+    grid-template-columns: 2fr 1px 7fr;
+    align-items: center;
+    margin: 10px 5px;
+    height: 60px;
+    padding-left: 10px;
+    background-color: rgba(0,0,0,0.1);
+    font-size: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #818181;
+    border: rgba(0,0,0,0.1) 1px solid;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+/* linkide ikoon külgribal */
+.side-icon-links {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+/* muud ikoonid külgribal */
+.side-icon {
+    max-width: 80%;
+    max-height: 60%;
+    margin-right: 10px;
+    margin-left: auto;
+}
+
+.sidebar-bar {
+    height: 80%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+/* külgriba esimene plokk */
+.side-button.title {
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: default;
+}
+
+/* külgriba lingid */
+.side-text {
+    margin-left: 5px;
+    color: black;
+    transition: color 0.2s;
+}
+
+/* kui hiir külgriba nupul, muuda kasti värvi */
+.side-button:hover {
+    background-color: rgba(0, 0, 50, 0.5);
+}
+
+/* kui hiir külgriba nupul, muuda teksti värvi */
+.side-button:hover .side-text {
+    color: gold;
+}
+
+/* suurenda content-wrapperi marginit et külgriba seda ei kataks */
+.sidenav.inactive + .content-wrapper {
+    margin-left: 0px;
+}
+
+.content-wrapper {
+    margin-left: 200px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+
 h1 {
     font-size: 60px;
     font-family: "VT323";
@@ -17,7 +150,7 @@ footer {
     align-items: center;
     justify-content: center;
     height: 160px;
-    background-image: url('/assets/images/bg-bedgrock.webp');
+    background-image: url('../assets/images/bg-bedgrock.webp');
     padding: 8px;
 }
 
