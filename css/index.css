@@ -1,0 +1,86 @@
+.logo-wrapper {
+    text-align: center;
+    padding: 20px 50px 0px 50px;
+}
+
+.logo {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.introduction {
+    font-size: large;
+    text-align: left;
+}
+
+.disc-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.disc-img {
+
+    width: 100px;
+    height: auto;
+    transition: transform 2s linear;
+}
+
+/* ketas pöörlema kui kursor seal peal on */
+.disc-img:hover {
+    animation: spin 2s infinite linear;
+}
+
+/* ketta pöörlemine */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.review-block {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-and-img {
+    display: grid;
+    grid-template-columns: 2px 2fr 1fr;
+    background-color: rgba(255, 255, 255, 0.267);
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.song-name {
+    margin-left: 10px;
+}
+
+.review-text {
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+.grade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #616161;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+.black-line {
+    background-color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
