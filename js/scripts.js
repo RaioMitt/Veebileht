@@ -117,7 +117,7 @@ function addRandomOres() {
 
     for (let i=0; i<oreCount; i++) {
         const ore = document.createElement('div'); // loo uus plokk
-        const oreType = ores[Math.floor(Math.random() * ores.length)]; // vali suvaline plokk
+        let oreType = ores[Math.floor(Math.random() * ores.length)]; // vali suvaline plokk
         const oreX = Math.floor(Math.random() * (screenWidth - 100) / 100); // vali suvaline x koordinaat (ruudustiku piires)
         const oreY = Math.floor(Math.random() * (scrollableHeight - 100) / 100) + oreStart; // vali suvaline y koordinaat, veendu, et ei oleks allpool footerit
 
@@ -129,7 +129,16 @@ function addRandomOres() {
         ore.style.backgroundImage = `url(${oreType})`; // ploki pilt
         ore.style.backgroundSize = 'cover'; // ploki pilt täidab kogu ploki
 
-        oreContainer.appendChild(ore); // lisa plokk lehele
+        // muuda plokk lingiks kui plokk on chest
+        if (oreType.includes('chest')) {
+            const link = document.createElement('a'); // loo uus link
+            link.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            link.target = '_blank'; // ava link uuel vahelehele
+            link.appendChild(ore);
+            oreContainer.appendChild(link); // lisa link lehele
+        } else {
+            oreContainer.appendChild(ore); // lisa plokk lehele
+        };
     }
 }
 
