@@ -52,9 +52,8 @@ hr {
     left: 0;
     width: 200px;
     height: 100%;
-    background: linear-gradient(#a7cbb0, lightgray);
-    box-shadow: 2px 0 5px rgba(0,0,0,0.5);
-    overflow-x: hidden; /* Disable horizontal scroll */
+    background-image: url('../assets/images/bg-dark-oak.webp');
+    box-shadow: 3px 0 10px rgba(0,0,0,0.5), 3px 0 10px rgba(0,0,0,0.5);
     transform: translateX(0%);
     transition: transform 0.3s ease-in-out;
     border-right: #4d4949 1px solid;
