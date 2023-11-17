@@ -26,76 +26,86 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Autor: Osvald
 // Lisa suvalisi ore plokke
+function getBasePath() { // leia õige aadress (kui leht on alamleht, on piltide asukoht teine)
+    const pathName = window.location.pathname; // lehe aadress
+    if (pathName.includes('/subpages/')) { // kui leht on alamleht
+        return '../assets/images/'; 
+    } else { // kui leht on pealeht
+        return 'assets/images/';
+    }
+}
 function addRandomOres() {
+    const basePath = getBasePath(); // leia õige aadress
     const ores = [
-        "../assets/images/bg-dirt.webp",
-        "../assets/images/bg-dirt.webp",
-        "../assets/images/bg-dirt.webp",
-        "../assets/images/bg-dirt.webp",
+        `${basePath}bg-dirt.webp`,
+        `${basePath}bg-dirt.webp`,
+        `${basePath}bg-dirt.webp`,
+        `${basePath}bg-dirt.webp`,
+        `${basePath}bg-dirt.webp`,
 
-        "../assets/images/ore-gravel.webp",
-        "../assets/images/ore-gravel.webp",
-        "../assets/images/ore-gravel.webp",
-        "../assets/images/ore-gravel.webp",
-        "../assets/images/ore-gravel.webp",
+        `${basePath}ore-gravel.webp`,
+        `${basePath}ore-gravel.webp`,
+        `${basePath}ore-gravel.webp`,
+        `${basePath}ore-gravel.webp`,
+        `${basePath}ore-gravel.webp`,
 
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
-        "../assets/images/ore-granite.webp",
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
+        `${basePath}ore-granite.webp`,
 
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
-        "../assets/images/ore-diorite.webp",
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
+        `${basePath}ore-diorite.webp`,
 
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
-        "../assets/images/ore-andesite.webp",
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
+        `${basePath}ore-andesite.webp`,
 
-        "../assets/images/ore-coal.webp",
-        "../assets/images/ore-coal.webp",
-        "../assets/images/ore-coal.webp",
-        "../assets/images/ore-coal.webp",
-        "../assets/images/ore-coal.webp",
-        "../assets/images/ore-coal.webp",
+        `${basePath}ore-coal.webp`,
+        `${basePath}ore-coal.webp`,
+        `${basePath}ore-coal.webp`,
+        `${basePath}ore-coal.webp`,
+        `${basePath}ore-coal.webp`,
+        `${basePath}ore-coal.webp`,
 
-        "../assets/images/ore-iron.webp",
-        "../assets/images/ore-iron.webp",
-        "../assets/images/ore-iron.webp",
-        "../assets/images/ore-iron.webp",
+        `${basePath}ore-iron.webp`,
+        `${basePath}ore-iron.webp`,
+        `${basePath}ore-iron.webp`,
+        `${basePath}ore-iron.webp`,
 
-        "../assets/images/ore-redstone.webp",
-        "../assets/images/ore-redstone.webp",
+        `${basePath}ore-redstone.webp`,
+        `${basePath}ore-redstone.webp`,
 
-        "../assets/images/ore-gold.webp",
-        "../assets/images/ore-gold.webp",
+        `${basePath}ore-gold.webp`,
+        `${basePath}ore-gold.webp`,
 
-        "../assets/images/ore-diamond.webp",
-        "../assets/images/ore-diamond.webp",
+        `${basePath}ore-diamond.webp`,
+        `${basePath}ore-diamond.webp`,
 
-        "../assets/images/ore-chest.webp",
+        `${basePath}ore-chest.webp`,
 
-        "../assets/images/ore-emerald.webp"
+        `${basePath}ore-emerald.webp`
     ]
     const oreContainer = document.querySelector('.content-wrapper'); // kuhu plokid lisada
     const oreStart = 7.6; // kui kõrgel alustada plokkide lisamist (100px kaupa, 10=1000px)
