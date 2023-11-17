@@ -2,6 +2,7 @@
 Tere tulemast meie Minecrafti muusikaplaatide arvustuse lehele!
 See leht on tehtud 2023. aasta sügisel Tartu Ülikooli kursuse Sissejuhatus erialasse raames.
 Tiimi liikmed on Raio, Kaspar ja Osvald.
+Projekti alguses ei osanud keegi kirjutada HTML ega CSS-i, JavaScripti mõistmisest rääkimata.
 
 [Veebilehe link](https://raiomitt.github.io/Veebileht/)
 
