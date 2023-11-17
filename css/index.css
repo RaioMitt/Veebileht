@@ -10,7 +10,7 @@
 }
 
 .introduction {
-    font-size: large;
+    font-size: 1.55em;
     text-align: left;
 }
 
@@ -67,6 +67,7 @@
 .review-text {
     margin: 0px;
     margin-bottom: 10px;
+    font-size: 1.4em;
 }
 
 .grade {

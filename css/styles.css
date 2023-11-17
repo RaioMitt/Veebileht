@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Neuton&display=swap');
+
 body, html {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Neuton, Helvetica, sans-serif;
     
     background-image:
     linear-gradient(to bottom, rgb(84, 161, 255), rgb(210, 230, 255)),
@@ -41,6 +43,10 @@ hr {
     border-style: solid;
     border-width: 1px;
     border-bottom: none;
+}
+
+strong {
+    text-decoration: underline;
 }
 
 /* külgriba */
