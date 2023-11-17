@@ -14,7 +14,6 @@ body, html {
     url('../assets/images/bg-stone.webp');
     background-repeat: no-repeat, repeat-x, repeat-x, repeat-x, repeat-x, repeat;
     
-    /* Adjust these sizes according to the actual size of your textures */
     background-size: 
     100% 300px, /* Taevas */
     auto auto, /* Muru */
@@ -227,7 +226,7 @@ h2 {
 }
 
 
-/* footer */
+/* jalus */
 footer {
     position: relative;
     background-color: lightgray;
