@@ -14,24 +14,22 @@ body, html {
     
     /* Adjust these sizes according to the actual size of your textures */
     background-size: 
-    100% 250px, /* Sky size */
-    auto auto, /* Grass */
-    auto auto, /* First layer of dirt */
-    auto auto, /* Second layer of dirt */
-    auto auto, /* Third layer of dirt */
-    auto auto; /* Stone */
+    100% 300px, /* Taevas */
+    auto auto, /* Muru */
+    auto auto, /* Muld */
+    auto auto, /* Muld 2 */
+    auto auto, /* Muld 3 */
+    auto auto; /* Kivi */
     
-    /* Since the sky is a gradient, it doesn't need a position. The following positions are for the textures. */
     background-position: 
-    center top,
-    0 250px,
-    0 350px,
-    0 450px,
-    0 550px,
-    0 650px;
+    center top, /* Taevas */
+    0 300px, /* Muru */
+    0 400px, /* Muld */
+    0 500px, /* Muld 2 */
+    0 600px, /* Muld 3 */
+    0 700px; /* Kivi */
     
-    /* Set the overall background color as stone */
-    background-color: #565656;
+    background-color: #565656; /* Kui pildid ei lae */
 }
 
 p {
@@ -57,6 +55,7 @@ hr {
     transform: translateX(0%);
     transition: transform 0.3s ease-in-out;
     border-right: #4d4949 1px solid;
+    z-index: 30;
 }
 
 /* peida külgriba kui pole vaja */
@@ -195,15 +194,18 @@ hr {
 .content-wrapper {
     margin-left: 200px;
     transition: margin-left 0.3s ease-in-out;
+    z-index: 0;
 }
 
 .main-content {
+    position: relative;
     margin: 0 auto;
     max-width: 800px;
     padding: 20px 100px 20px 90px;
     background-image: url('../assets/images/book-border.png');
     background-size: 100% auto;
     box-shadow: 0 0 5px black;
+    z-index: 10;
 }
 
 
@@ -221,6 +223,7 @@ h2 {
 
 /* footer */
 footer {
+    position: relative;
     background-color: lightgray;
     box-shadow: 0 0 50px black;
     display: flex;
@@ -229,6 +232,7 @@ footer {
     height: 60px;
     background-image: url('../assets/images/bg-bedgrock.webp');
     padding: 8px;
+    z-index: 25;
 }
 
 .footer-text {
