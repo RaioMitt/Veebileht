@@ -12,6 +12,6 @@ Siin on välja toodud mõned lahedad lehe funktsioonid, millele tasuks tähelepa
 - küljeriba puu lehed liiguvad, igaüks veidi erineval ajal
 - külgriba kaob, kui alla kerida ja tuleb tagasi, kui veidi üles kerida, ka päris lehe lõpus olles
 - taustal on Minecrafti maapinna struktuur, mis on genereeritud, mitte lihtsalt üks suur pilt
-  - ore plokkide genereerimine on juhuslik ja nende asetus muutub lehe värskendamisel või teisele vahelehele minnes. Igal plokil on oma muudetav tõenäosus ilmumiseks.
+  - ore plokkide genereerimine on juhuslik ja nende asetus muutub lehe värskendamisel või teisele vahelehele minnes. Igal plokil on oma muudetav tõenäosus ilmumiseks. (huvitav mis seal chestis on?)
 - jaluses on lahe animeeritud tekst :D
 - peamise sisuploki taustal on Minecrafti raamatu tekstuur
