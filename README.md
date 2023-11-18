@@ -43,3 +43,4 @@ Asjad mis vajavad veel tegemist
   - wiki-s kõigile failidele viited juurde (enamus kõik Microsoft Studios, lihtsalt tuleb viiteid vormistada, aga mis enda tehtud või netist võetud peab viide juures olema)
 - taustale muru peale lisada notsu vms ja taevasse mõni pilv, see ala seal praegu väga kurb ja tühi (**raio**)
 - külgriba nuppe vajutades võiks mängida minecrafti click heli (fail olemas juba `assets/audio/click.mp3`) (**raio**)
+- teha leht telefonis vaadatavaks (praegu on väga halb) (**raio**)
