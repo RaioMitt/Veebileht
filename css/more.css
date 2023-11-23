@@ -1,0 +1,11 @@
+.more-text {
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+}
+.more-text-dotted {
+    margin: 0px;
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    list-style-type: square;
+}
