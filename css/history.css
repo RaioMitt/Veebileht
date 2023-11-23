@@ -3,3 +3,23 @@
     margin-bottom: 10px;
     font-size: 1.4em;
 }
+h1 {
+    font-size: 60px;
+
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row{
+
+    display: flex;
+  }
