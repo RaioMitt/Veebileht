@@ -9,3 +9,85 @@
     font-size: 1.4em;
     list-style-type: square;
 }
+
+
+/* gallery */
+#shelf {
+    position: relative;
+    background-color: #555;
+    margin: 20px 5px;
+    padding: 10px 15px;
+}
+
+#gallery {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url('../assets/images/vinyl-cover.jpg');
+    background-size: cover;
+    margin: 0;
+    padding: 50px;
+}
+
+.gallery-item img {
+    position: relative;
+    width: 85%;
+    height: 85%;
+    margin: 13% 7.5% 2% 7.5%;
+    object-fit:fill;
+    filter: sepia(30%);
+}
+
+.gallery-text {
+    font-family: cursive;
+    position: absolute;
+    top: 40px;
+    width: 300px;
+    font-size: 4em;
+    text-shadow: black 0 0 3px, black 0 0 3px, black 0 0 6px;
+    color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.hotbar-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    image-rendering: pixelated;
+    background-image: url('../assets/images/hotbar.png');
+}
+
+.gallery-button {
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.gallery-button:hover {
+    cursor: pointer;
+    filter: brightness(1.1) sepia(100%) hue-rotate(200deg);
+}
+
+.gallery-button:active {
+    filter: brightness(0.7);
+}
+
+#back-button {
+    left: 10px;
+}
+
+#next-button {
+    right: 10px;
+}
