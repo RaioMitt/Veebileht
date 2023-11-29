@@ -19,9 +19,3 @@ Siin on välja toodud mõned lahedad lehe funktsioonid, millele tasuks tähelepa
 # TODO
 Asjad mis vajavad veel tegemist
 ## Muu
-- failide QC teha (**Kaspar**)
-  - koodi failid kõik validaatoriga üle käia
-  - kõik osad korralikult eesti keeles kommenteerida (kuigi see juba enam vähem hästi)
-  - kasutamata failid `assets` jms alt ära kustutada
-- külgriba nuppe vajutades võiks mängida minecrafti click heli (fail olemas juba `assets/audio/click.mp3`) (**raio**)
-- teha leht telefonis vaadatavaks (praegu on väga halb) (**raio**)
