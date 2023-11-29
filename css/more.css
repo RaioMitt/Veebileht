@@ -115,9 +115,6 @@ ul li {
 }
 
 @keyframes noteRise {
-    0% {
-        transform: translateY(0px);
-    }
     60% {
         opacity: 0.8;
     }
