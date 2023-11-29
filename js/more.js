@@ -10,37 +10,64 @@ document.addEventListener('DOMContentLoaded', function() {
         const gallery = document.getElementById('gallery');
         gallery.scrollLeft -= scrollAmount;
     });
-
-    // plaadid vajutatavaks
+    
+    
+    // plaat vajutades liigub hiirega
+    let floatingDisc = null;
+    function addDisc(event, name) {
+        floatingDisc = document.createElement('img');
+        floatingDisc.style.position = 'absolute';
+        floatingDisc.style.width = '200px';
+        floatingDisc.style.height = 'auto';
+        floatingDisc.src = `../assets/images/disc-${name}.png`;
+        floatingDisc.style.zIndex = 100;
+        floatingDisc.style.pointerEvents = 'none';
+        document.body.appendChild(floatingDisc);
+        moveDisc(event);
+        document.addEventListener('mousemove', moveDisc);
+        document.addEventListener('mousedown', removeDisc);
+    }
+    function moveDisc(event) {
+        // liiguta plaati
+        floatingDisc.style.left = event.pageX - 100 + 'px';
+        floatingDisc.style.top = event.pageY - 63 + 'px';
+    }
+    function removeDisc() {
+        if (floatingDisc) {
+            floatingDisc.remove();
+            floatingDisc = null;
+            document.removeEventListener('mousemove', moveDisc);
+            document.removeEventListener('mousedown', removeDisc);
+        }
+    }
+    
     const galleryDiscs = document.querySelectorAll('.gallery-item');
     galleryDiscs.forEach(disc => {
-        disc.addEventListener('click', function() {
+        disc.addEventListener('click', function(event) {
             const name = this.querySelector('img').alt;
             const mp3 = `../assets/audio/${name}.mp3`;
-            console.log(mp3);
-
-            // võta plaat hiirega kaasa
-            document.body.style.cursor = `url('../assets/images/disc-${name}.png'), auto`;
-            console.log(document.body.style.cursor);
+            // lisa plaat
+            addDisc(event, name);
+            // salvesta lugu attribuudiga
             document.body.setAttribute('data-disc-mp3', mp3);
-        });
     });
+});
 
-    // mängi lugu kui vajutada plaadimängijale
-    let track = null;
-    const jukebox = document.getElementById('jukebox');
-    jukebox.addEventListener('click', function() {
-        // kui mõni lugu juba mängib siis pane see kinni
-        if (track && !track.paused) {
-            track.pause();
-        }
-        const mp3 = document.body.getAttribute('data-disc-mp3');
-        if (mp3) {
-            track = new Audio(mp3);
-            track.play();
-
-            document.body.style.cursor = 'auto';
-            document.body.removeAttribute('data-disc-mp3');
-        }
-    });
+// mängi lugu kui vajutada plaadimängijale
+let track = null;
+const jukebox = document.getElementById('jukebox');
+jukebox.addEventListener('click', function() {
+    // kui mõni lugu juba mängib siis pane see kinni
+    if (track && !track.paused) {
+        track.pause();
+    }
+    const mp3 = document.body.getAttribute('data-disc-mp3');
+    if (mp3) {
+        track = new Audio(mp3);
+        track.play();
+        
+        document.body.style.cursor = 'auto';
+        document.body.removeAttribute('data-disc-mp3');
+    }
+});
 });

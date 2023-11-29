@@ -31,6 +31,8 @@ body, html {
     0 700px; /* Kivi */
     
     background-color: #565656; /* Kui pildid ei lae */
+
+    overflow-x: hidden;
 }
 
 p {
