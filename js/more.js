@@ -56,18 +56,23 @@ document.addEventListener('DOMContentLoaded', function() {
 // mängi lugu kui vajutada plaadimängijale
 let track = null;
 const jukebox = document.getElementById('jukebox');
+const note = document.getElementById('note');
 jukebox.addEventListener('click', function() {
     // kui mõni lugu juba mängib siis pane see kinni
     if (track && !track.paused) {
         track.pause();
+        note.style.display = 'none';
     }
     const mp3 = document.body.getAttribute('data-disc-mp3');
+    // kui lugu on seatud siis mängi
     if (mp3) {
         track = new Audio(mp3);
         track.play();
-        
-        document.body.style.cursor = 'auto';
         document.body.removeAttribute('data-disc-mp3');
+        note.style.display = 'block';
+        track.onended = function() {
+            note.style.display = 'none';
+        }
     }
 });
 });

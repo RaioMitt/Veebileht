@@ -98,3 +98,39 @@
     max-width: 400px;
     margin: 100px auto 20px auto;
 }
+
+#note {
+    display: none;
+    position: relative;
+    animation: sway 2s ease-in-out infinite, noteRise 4s linear infinite;
+    bottom: 390px;
+    left: 48%;
+    height: 60px;
+    width: auto;
+    z-index: 105;
+}
+
+@keyframes noteRise {
+    0% {
+        transform: traslateY(0px);
+    }
+    60% {
+        opacity: 0.8;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(10px);
+    }
+    50% {
+        transform: translateX(-10px);
+    }
+}
