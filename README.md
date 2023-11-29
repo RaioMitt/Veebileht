@@ -15,4 +15,4 @@ Siin on välja toodud mõned lahedad lehe funktsioonid, millele tasuks tähelepa
   - ore plokkide genereerimine on juhuslik ja nende asetus muutub lehe värskendamisel või teisele vahelehele minnes. Igal plokil on oma muudetav tõenäosus ilmumiseks. (Huvitav, mis seal chestis on?)
 - jaluses on lahe animeeritud tekst :D
 - peamise sisuploki taustal on Minecrafti raamatu tekstuur
-- "Audio klipid" lehel on töötav jukebox! Vali endale loetelus plaat (plaadi peale vasak klõps) ja viska see plaadimängijasse (jukeboxi peale uuesti vasak klõps)
+- "Audio klipid" lehel on töötav jukebox! Vali endale loetelust plaat (plaadi peale vasak klõps) ja viska see plaadimängijasse (jukeboxi peale uuesti vasak klõps)
