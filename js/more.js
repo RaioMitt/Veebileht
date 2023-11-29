@@ -1,3 +1,6 @@
+// Autor: Osvald
+// Plaadigalerii ja töötav jukebox!
+
 document.addEventListener('DOMContentLoaded', function() {
     const scrollAmount = 300;  // kui palju korraga kerida
     // paremale nupp

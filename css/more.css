@@ -1,7 +1,7 @@
 .more-text {
     margin: 0px;
     margin-bottom: 20px;
-    font-size: 1.4em;
+    font-size: 1.55em;
 }
 .more-text-dotted {
     margin: 0px;
@@ -9,6 +9,10 @@
     font-size: 1.4em;
     list-style-type: square;
 }
+ul li {
+    padding: 10px 0px;
+}
+
 
 /* gallery */
 #shelf {
@@ -112,7 +116,7 @@
 
 @keyframes noteRise {
     0% {
-        transform: traslateY(0px);
+        transform: translateY(0px);
     }
     60% {
         opacity: 0.8;

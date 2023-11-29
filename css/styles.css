@@ -101,7 +101,7 @@ strong {
 .leaf-block.n4 {
     left: -85px;
     top: -30px;
-    animation-delay: 0;
+    animation-delay: 0s;
 }
 .leaf-block.n5 {
     left: 155px;
@@ -111,7 +111,7 @@ strong {
 .leaf-block.n6 {
     left: 200px;
     top: -10px;
-    animation-delay: 1.1;
+    animation-delay: 1.1s;
 }
 .leaf-block.n7 {
     left: 50px;
