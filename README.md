@@ -16,8 +16,3 @@ Siin on välja toodud mõned lahedad lehe funktsioonid, millele tasuks tähelepa
 - jaluses on lahe animeeritud tekst :D
 - peamise sisuploki taustal on Minecrafti raamatu tekstuur
 
-# TODO
-Asjad mis vajavad veel tegemist
-## Muu
-- failide QC teha (**Kaspar**)
-  - kasutamata failid `assets` jms alt ära kustutada
