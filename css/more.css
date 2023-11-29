@@ -9,3 +9,6 @@
     font-size: 1.4em;
     list-style-type: square;
 }
+ul li {
+    padding: 10px 0px;
+}
