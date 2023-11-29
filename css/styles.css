@@ -31,6 +31,8 @@ body, html {
     0 700px; /* Kivi */
     
     background-color: #565656; /* Kui pildid ei lae */
+
+    overflow-x: hidden;
 }
 
 p {
@@ -48,7 +50,6 @@ strong {
     text-decoration: underline;
 }
 
-/* külgriba */
 .sidenav {
     position: fixed;
     top: 0;
@@ -68,7 +69,6 @@ strong {
     transform: translateX(-150%);
 }
 
-/* lehe plokk */
 .leaf-block {
     width: 100px;
     height: 100px;
@@ -82,6 +82,7 @@ strong {
     animation-duration: 5s;
 }
 
+/* lehe plokid eraldi animatsiooni jaoks */
 .leaf-block.n1 {
     left: -75px;
     top: -50px;
@@ -163,7 +164,6 @@ strong {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-/* külgriba esimene plokk */
 .side-button.title {
     margin-top: 60px;
     color: white;
@@ -229,8 +229,6 @@ h3{
     font-family: "VT323";
 }
 
-
-/* jalus */
 footer {
     position: relative;
     background-color: lightgray;
@@ -268,6 +266,7 @@ footer {
     animation-duration: 1s;
 }
 
+/* jaluse sõnadel eraldi delay */
 .foot-flash-1 {
     animation-delay: 0.1s;
 }

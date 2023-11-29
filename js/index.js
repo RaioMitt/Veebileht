@@ -1,8 +1,8 @@
 // Autor: Osvald
 // Mängi lugu kui hiir on plaadi peal
-document.addEventListener('DOMContentLoaded', function() { // veendu et leht on laetud
+document.addEventListener('DOMContentLoaded', function() {  // veendu, et leht on laetud
     let discs = document.querySelectorAll(".disc-img");
-    let tracks = [
+    let tracks = [ // lugude list vastavas järjekorras
         "assets/audio/pigstep-short.mp3",
         "assets/audio/relic-short.mp3",
         "assets/audio/stal-short.mp3",
@@ -21,13 +21,14 @@ document.addEventListener('DOMContentLoaded', function() { // veendu et leht on 
         "assets/audio/11-short.mp3"
       ];
     discs.forEach((disc, index) => {
+      // mängi lugu kui hiir tuleb plaadile ja peata kui lahkub
       let track = new Audio(tracks[index]);
       disc.addEventListener('mouseover', () => {
         track.play();
       });
       disc.addEventListener('mouseout', () => {
         track.pause();
-        //audio.currentTime = 0;    // alusta iga kord algusest
+        //audio.currentTime = 0;  // alusta iga kord algusest
       });
     });
   });
