@@ -4,7 +4,7 @@ See leht on tehtud 2023. aasta sügisel Tartu Ülikooli kursuse Sissejuhatus eri
 Tiimi liikmed on Raio, Kaspar ja Osvald.
 Projekti alguses ei osanud keegi kirjutada HTML ega CSS-i, JavaScripti mõistmisest rääkimata.
 
-[Veebilehe link](https://raiomitt.github.io/Veebileht/)
+[Veebilehe link](https://kodu.ut.ee/~raiomitt/Veebileht/index.html)
 
 # Funktsioonid
 Siin on välja toodud mõned lahedad lehe funktsioonid, millele tasuks tähelepanu pöörata:
